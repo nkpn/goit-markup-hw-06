@@ -544,7 +544,6 @@ color: #FFFFFF;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   padding-top: 30px;
@@ -591,11 +590,10 @@ color: #FFFFFF;
   fill: #ffffff;
 }
 
-
-  .master-icon{
+.master-icon{
     justify-content: center;
     align-items: center;
-  }
+}
 
 /* FOOTER */
 
