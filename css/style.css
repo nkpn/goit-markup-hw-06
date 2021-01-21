@@ -1022,7 +1022,7 @@ color: #FFFFFF;
 
 .form-input:focus + .input-img + .form-text{
   background-color: var(--blue-bg-color);
-  fill: var(--blue-bg-color);
+  fill: currentColor;
   color: var(--blue-bg-color);
 }
 
