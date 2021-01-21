@@ -1019,6 +1019,16 @@ color: #FFFFFF;
   position: relative;
 }
 
+.svg-modal{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  /*background-color: black;*/
+}
+
 .input-img{
   /*width: 18px;
   height: 18px;
