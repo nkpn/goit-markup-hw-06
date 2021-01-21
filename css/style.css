@@ -955,6 +955,17 @@ color: #FFFFFF;
   pointer-events: none;
 }
 
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .modal-head-text{
   font-family: Roboto;
   font-weight: bold;
@@ -965,8 +976,13 @@ color: #FFFFFF;
 }
 
 .text-agreement{
-  position: relative;
+  width: 100%;
   margin-left: 31px;
+}
+
+.agreement-link{
+  color: var(--blue-bg-color);
+  text-decoration: underline;
 }
 
 .form{
@@ -1029,6 +1045,7 @@ color: #FFFFFF;
 
 .form-field:focus-within > .svg-modal{
   fill: var(--blue-bg-color);
+  color: var(--blue-bg-color);
 } 
 
 .container-input{
@@ -1057,26 +1074,32 @@ color: #FFFFFF;
   transform: translatex(-50%);*/
 }
 
-
+.check{
+  padding-left: 0px;
+}
 
 .checkbox-container{
-  /*margin-top: 10px;*/
+  position: relative;
+  width: 100%;
 }
 
 .checkbox-icon{
   left: 8px;
   top: 50%;
-  transform: translateY(50%);
+  transform: translateY(-50%);
 
   position: absolute;
   cursor: pointer;
-  width: 15px;
+  width: 16px;
   height: 15px;
   border: 1px solid var(--blue-bg-color);
 }
 
 .check:checked ~ .checkbox-icon{
   background-color: var(--blue-bg-color);
+  fill: currentColor;
+  background-position: center;
+
 }
 
 .form-button{
