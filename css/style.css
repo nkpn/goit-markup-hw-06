@@ -1043,7 +1043,7 @@ color: #FFFFFF;
   color: var(--blue-bg-color);
 } 
 
-.form-field:focus-within > .svg-modal{
+.form-field:focus-within .svg-modal{
   fill: var(--blue-bg-color);
   color: var(--blue-bg-color);
 } 
@@ -1095,11 +1095,18 @@ color: #FFFFFF;
   border: 1px solid var(--blue-bg-color);
 }
 
-.check:checked ~ .checkbox-icon{
+/*.check:checked ~ .checkbox-icon{
   background-color: var(--blue-bg-color);
   fill: currentColor;
-  background-position: center;
+}*/
 
+.check:hover + .checkbox-icon::before,
+.check:focus + .checkbox-icon::before{
+  background-color: var(--blue-bg-color);
+  background-image: url(../images/checkbox.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--blue-bg-color);
 }
 
 .form-button{
