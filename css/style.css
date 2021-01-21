@@ -1014,17 +1014,22 @@ color: #FFFFFF;
 }
 
 
+
 .form-input:focus{
   outline:none;
   border-color: var(--blue-bg-color);
   cursor: pointer;
 }
 
-.form-input:focus + .input-img + .form-text{
-  background-color: var(--blue-bg-color);
-  fill: currentColor;
+
+/* Аналогичное к выше фокусу */
+.form-field:focus-within > .form-text{
   color: var(--blue-bg-color);
-}
+} 
+
+.form-field:focus-within > .svg-modal{
+  fill: var(--blue-bg-color);
+} 
 
 .container-input{
   position: relative;
