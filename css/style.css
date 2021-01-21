@@ -989,7 +989,7 @@ color: #FFFFFF;
 
 .form-field{
   /*position: relative;*/
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form-label{
@@ -1041,9 +1041,9 @@ color: #FFFFFF;
   background-color: var(--blue-bg-color);
 }
 
-/*.checkbox-container{
-  
-}*/
+.checkbox-container{
+  /*margin-top: 10px;*/
+}
 
 .checkbox-icon{
   left: 8px;
@@ -1070,10 +1070,14 @@ color: #FFFFFF;
   font-weight: bold;
   font-size: 16px;
   line-height: 0.53;
+
   padding: 10px 55px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+
   cursor: pointer;
   border-color: transparent;
   color: #ffffff;
-  max-width: 200px;
-  max-height: 50px;
+  width: 200px;
+  height: 50px;
 }
