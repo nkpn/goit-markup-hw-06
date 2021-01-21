@@ -934,16 +934,17 @@ color: #FFFFFF;
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: var(--main-text-color);
-  opacity: 0.5;
+  opacity: 0,9;
+
 }
 
 .modal{
   position: relative;
-  width: 528;
-  height: 581px;
+  width: 300px;
+  height: 300px;
   left: 50%;
   top: 50%;
+  padding: 40px;
   transform: translate(-50%, -50%);
 
   background-color: #ffffff;
@@ -962,22 +963,25 @@ color: #FFFFFF;
   font-size: 20px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-left: 40px;
+  margin-bottom: 12px;
+}
+
+.text-agreement{
+  position: relative;
+  margin-left: 31px;
 }
 
 .form{
-  padding: 20px;
-  margin: 20px;
-  width: 448px;
-  position: ;
+  width: 100%;
 }
 
-.form p{
+.form-input{
+  width: 100%;
+}
+
+.form-text{
   margin-top: 10px;
   margin-bottom: 4px;
-  
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -986,7 +990,7 @@ color: #FFFFFF;
 }
 
 .form-field{
-  position: relative;
+  /*position: relative;*/
   margin-bottom: 20px;
 }
 
@@ -997,6 +1001,7 @@ color: #FFFFFF;
   transform: translateY(-50%);
   background-color: var(--blue-bg-color);
   color: #ffffff;
+  width: 100%;
 }
 
 .form-input{
@@ -1008,10 +1013,55 @@ color: #FFFFFF;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.form-input:focus + .form-label{
+.form-input:hover::placeholder{
   color: var(--blue-bg-color);
 }
 
+.container-input{
+  position: relative;
+}
+
+.input-img{
+  /*width: 18px;
+  height: 18px;
+  background-color: black;
+  position: absolute;
+  left: 14px;
+  /* по вертикали - посередине инпута */
+ /*top: 50%;
+
+  transform: translatex(-50%);*/
+}
+
+.form-input:focus{
+  outline:none;
+  border-color: var(--blue-bg-color);
+  cursor: pointer;
+}
+
+.form-input:focus + .input-img{
+  background-color: var(--blue-bg-color);
+}
+
+/*.checkbox-container{
+  
+}*/
+
+.checkbox-icon{
+  left: 8px;
+  top: 50%;
+  transform: translateY(50%);
+
+  position: absolute;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--blue-bg-color);
+}
+
+.check:checked ~ .checkbox-icon{
+  background-color: var(--blue-bg-color);
+}
 
 .form-button{
   background-color: var(--blue-bg-color);

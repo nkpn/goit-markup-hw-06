@@ -29,13 +29,13 @@
         <div class="auth-nav"> 
         <a class="address-header link" href="mailto:info@devstudio.com">
             <svg class="header-logo link" height="12" width="16">
-                <use href="../goit-markup-hw-05/images/symbol-defs.svg#icon-envelope"></use>
+                <use href="../goit-markup-hw-06/images/symbol-defs.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
         </a>
         <a class="address-header link" href="tel:+380961111111">
             <svg class="header-logo link" height="12" width="16">
-                <use href="../goit-markup-hw-05/images/symbol-defs.svg#icon-smartphone"></use>
+                <use href="../goit-markup-hw-06/images/symbol-defs.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11
         </a>
@@ -410,37 +410,67 @@
                 <p class="modal-head-text">Оставьте свои данные, мы вам перезвоним</p>
             
                 <form class="form">
-                    <div class="form-field">
-                        <p>Имя</p>
+                    <div class="form-field name">
+                        <p class="form-text">Имя</p>
                         <label class="form-label"></label>
+                        <div class="container-input">
                         <input 
+                        class="form-input"
                         type="text" 
                         name="name"/>
+                        <div class="input-img">
+                            <svg class="" height="12" width="12">
+                                <use href="../goit-markup-hw-06/images/symbol-defs.svg#person-input"></use>
+                            </svg>
+                        </div>
                     </div>
+                    </div>
+
+                    <svg class="header-logo link" height="12" width="16">
+                        <use href="../goit-markup-hw-05/images/symbol-defs.svg#icon-envelope"></use>
+                    </svg>
         
-                    <div class="form-field">
-                    <p>Телефон</p>
+                    <div class="form-field tel">
+                    <p class="form-text">Телефон</p>
                     <label class="form-label"></label>
+                    <div class="container-input">
                     <input 
+                        class="form-input"
                         type="tel" 
                         name="tel"/>   
+                        <div class="input-img"></div>
+                    </div>
                     </div>
         
-                    <div class="form-field">
-                        <p>Почта</p>
+                    <div class="form-field email">
+                        <p class="form-text">Почта</p>
                         <label class="form-label"></label> 
+                        <div class="container-input">
                         <input 
+                        class="form-input"
                         type="email" 
-                        name="email"/>  
+                        name="email"/>
+                        <div class="input-img"></div>  
+                    </div>
                     </div>
         
-                    <div class="form-field">
-                        <p>Комментарий</p>
+                    <div class="form-field comment">
+                        <p class="form-text">Комментарий</p>
                         <label class="form-label"></label>
-                        <textarea name="comment" rows="8" placeholder="Введите текст">
+                        <textarea class="form-input" name="comment" placeholder="Введите текст">
                         </textarea>
                     </div>
-        
+                    
+                    <div class="checkbox-container">
+                        <label>
+                            <div class="text-agreement">Соглашаюсь с рассылкой и принимаю <a class="link" href="#">Условия договора</a>
+                            <input type="checkbox" class="check hidden">
+                            </div>
+
+                            <div class="checkbox-icon"></div>
+                        </label>
+                    </div>
+
                     <button type="submit" class="form-button">Отправить</button>
                 </form>
 
