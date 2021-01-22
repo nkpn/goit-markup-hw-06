@@ -690,6 +690,68 @@ color: #FFFFFF;
   fill: #ffffff;
 }
 
+.subscribe{
+  padding-left: 93px;
+  position: relative;
+}
+
+.form-footer{
+  width: 358px;
+  height: 50px;
+  margin: 0;
+  padding: 15px auto;
+  padding-left: 16px;
+  font: inherit;
+  font-size: 16px;
+  background-color: #2F303A;
+  color:color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.button-subscribe{
+  position: absolute;
+  left: 465px;
+  top: 46px;
+
+  background-color: var(--blue-bg-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+  cursor: pointer;
+  border-color: transparent;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+}
+
+.button-subscribe-div{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-link{
+  justify-content: center;
+  align-items: center;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 0.53;
+  color: #FFFFFF;
+}
+
+.subscribe-icon{
+  fill: #FFFFFF;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
 
 
 /* CUSTOMERS */
@@ -978,6 +1040,11 @@ color: #FFFFFF;
 .text-agreement{
   width: 100%;
   margin-left: 31px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 0.6;
 }
 
 .agreement-link{
@@ -986,10 +1053,6 @@ color: #FFFFFF;
 }
 
 .form{
-  width: 100%;
-}
-
-.form-input{
   width: 100%;
 }
 
@@ -1007,6 +1070,10 @@ color: #FFFFFF;
 .form-field{
   /*position: relative;*/
   margin-bottom: 10px;
+}
+
+.name{
+  padding-top: 0px;
 }
 
 .form-label{
@@ -1059,19 +1126,21 @@ color: #FFFFFF;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  /*background-color: black;*/
 }
 
-.input-img{
-  /*width: 18px;
-  height: 18px;
-  background-color: black;
-  position: absolute;
-  left: 14px;
-  /* по вертикали - посередине инпута */
- /*top: 50%;
+.comment{
+  padding-bottom: 10px;
+}
 
-  transform: translatex(-50%);*/
+.textarea{
+  padding-left:10px;
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  padding: 10px 20px;
+  font: inherit;
+  border-radius: 3px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .check{
@@ -1081,6 +1150,7 @@ color: #FFFFFF;
 .checkbox-container{
   position: relative;
   width: 100%;
+
 }
 
 .checkbox-icon{
@@ -1128,4 +1198,10 @@ color: #FFFFFF;
   color: #ffffff;
   width: 200px;
   height: 50px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
