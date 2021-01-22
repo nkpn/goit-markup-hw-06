@@ -713,6 +713,11 @@ color: #FFFFFF;
   position: absolute;
   left: 465px;
   top: 46px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  padding: 10px 28px;  
 
   background-color: var(--blue-bg-color);
   border-radius: 4px;
@@ -721,38 +726,12 @@ color: #FFFFFF;
   cursor: pointer;
   border-color: transparent;
   color: #ffffff;
-  width: 200px;
-  height: 50px;
-}
-
-.button-subscribe-div{
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.subscribe-link{
-  justify-content: center;
-  align-items: center;
-
+  fill: #FFFFFF;
   font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 0.53;
-  color: #FFFFFF;
+  line-height: 1.87;
 }
-
-.subscribe-icon{
-  fill: #FFFFFF;
-  background-size: contain;
-  background-position: center;
-  width: 24px;
-  height: 24px;
-}
-
-
 
 /* CUSTOMERS */
 
