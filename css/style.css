@@ -704,9 +704,14 @@ color: #FFFFFF;
   font: inherit;
   font-size: 16px;
   background-color: #2F303A;
-  color:color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form-footer:focus{
+  outline: none;
+  border: 1px solid var(--blue-bg-color);
 }
 
 .button-subscribe{
@@ -731,6 +736,10 @@ color: #FFFFFF;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
+}
+
+.button-subscribe > p{
+  margin-right: 10px;
 }
 
 /* CUSTOMERS */
