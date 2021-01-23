@@ -547,6 +547,7 @@ color: #FFFFFF;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   padding-top: 30px;
+  text-align: center;
 }
 
 .card-person .text{
