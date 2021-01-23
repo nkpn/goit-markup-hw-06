@@ -1173,11 +1173,12 @@ color: #FFFFFF;
 
 .check:checked ~ .checkbox-icon{
   background-color: var(--blue-bg-color);
+  fill: #ffffff;
 }
 
-.check:checked ~ .svg-modal{
-  fill: #ffffff);
-}
+/*.check:checked ~ .svg-modal{
+  fill: #ffffff;
+}*/
 
 /*.check:hover + .checkbox-icon::before,
 .check:focus + .checkbox-icon::before{
