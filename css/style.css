@@ -1154,6 +1154,14 @@ color: #FFFFFF;
   border: 1px solid var(--blue-bg-color);
 }
 
+.checkbox-icon > .svg-modal{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
 .check:checked ~ .checkbox-icon{
   background-color: var(--blue-bg-color);
 }
