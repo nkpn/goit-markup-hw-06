@@ -1154,19 +1154,22 @@ color: #FFFFFF;
   border: 1px solid var(--blue-bg-color);
 }
 
-/*.check:checked ~ .checkbox-icon{
+.check:checked ~ .checkbox-icon{
   background-color: var(--blue-bg-color);
-  fill: currentColor;
-}*/
+}
 
-.check:hover + .checkbox-icon::before,
+.check:checked ~ .svg-modal{
+  fill: var(--blue-bg-color);
+}
+
+/*.check:hover + .checkbox-icon::before,
 .check:focus + .checkbox-icon::before{
   background-color: var(--blue-bg-color);
   background-image: url(../images/checkbox.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: var(--blue-bg-color);
-}
+}*/
 
 .form-button{
   background-color: var(--blue-bg-color);
