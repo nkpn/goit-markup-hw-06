@@ -1176,10 +1176,6 @@ color: #FFFFFF;
   fill: #ffffff;
 }
 
-/*.check:checked ~ .svg-modal{
-  fill: #ffffff;
-}*/
-
 /*.check:hover + .checkbox-icon::before,
 .check:focus + .checkbox-icon::before{
   background-color: var(--blue-bg-color);
