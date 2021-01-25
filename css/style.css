@@ -1172,6 +1172,8 @@ color: #FFFFFF;
   left: 8px;
   top: 50%;
   transform: translateY(-50%);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 
   position: absolute;
   cursor: pointer;
@@ -1179,28 +1181,27 @@ color: #FFFFFF;
   height: 15px;
   border: 2px solid black;
   border-radius: 1px;
+
 }
 
-.checkbox-icon > .svg-modal{
+/*.checkbox-icon > .svg-modal{
   position: absolute;
   bottom: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
   background-position: center;
-}
+}*/
 
-.check:checked ~ .checkbox-icon{
+/*.check:checked ~ .checkbox-icon{
   background-color: var(--blue-bg-color);
   border: inherit;
   fill: #ffffff;
-}
+}*/
 
-.check:checked + .checkbox-icon::before,
-.check:focus + .checkbox-icon::before{
-  background-color: #ffffff;
-  background-image: url(../images/checkbox.svg);
+.check:checked + .checkbox-icon{
   background-color: var(--blue-bg-color);
+  background-image: url(../images/checkbox.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: var(--blue-bg-color);
