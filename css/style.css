@@ -1139,7 +1139,9 @@ color: #FFFFFF;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.check{
+/* скрытие чекбоса*/
+
+/*.check{
   padding-left: 0px;
   border: 0;
   clip: rect(0 0 0 0);
@@ -1149,6 +1151,15 @@ color: #FFFFFF;
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+/* второй метод скрытия чекбокса */
+
+.check{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
 }
 
 .checkbox-container{
@@ -1166,7 +1177,8 @@ color: #FFFFFF;
   cursor: pointer;
   width: 16px;
   height: 15px;
-  border: 1px solid var(--blue-bg-color);
+  border: 2px solid black;
+  border-radius: 1px;
 }
 
 .checkbox-icon > .svg-modal{
@@ -1180,17 +1192,19 @@ color: #FFFFFF;
 
 .check:checked ~ .checkbox-icon{
   background-color: var(--blue-bg-color);
+  border: inherit;
   fill: #ffffff;
 }
 
-/*.check:hover + .checkbox-icon::before,
+.check:checked + .checkbox-icon::before,
 .check:focus + .checkbox-icon::before{
-  background-color: var(--blue-bg-color);
+  background-color: #ffffff;
   background-image: url(../images/checkbox.svg);
+  background-color: var(--blue-bg-color);
   background-size: contain;
   background-origin: border-box;
   border-color: var(--blue-bg-color);
-}*/
+}
 
 .form-button{
   background-color: var(--blue-bg-color);
