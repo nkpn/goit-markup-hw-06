@@ -350,7 +350,6 @@
 
     <footer class="footer">
     <div class="container">
-    <div class="container-footer">
     <div class="footer-address">
         <ul class="footer-list">
         <li class="footer-item-1"><a href="../goit-markup-hw-06/index.html"><span class="web-footer">Web</span><span class="studio-footer">Studio</span></a></li>
@@ -396,28 +395,25 @@
     <div class="subscribe">
         <h3 class="footer-social">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
 
-        <form class="form">
+        <form class="form form-footer">
             <label class=""></label> 
                 <input 
-                class="form-footer"
+                class="form-footer-input"
                 type="email" 
                 name="email"
                 placeholder="E-mail"/>
+                <button class="button-subscribe" type="submit">
+                    <p>Подписаться</p>
+                        <svg height="24" width="24">
+                            <use href="../goit-markup-hw-06/images/symbol-defs.svg#icon-send"></use>
+                        </svg>
+                </button>
         </form>
-
-        <button class="button-subscribe" type="submit">
-            <p>Подписаться</p>
-                <svg height="24" width="24">
-                    <use href="../goit-markup-hw-06/images/symbol-defs.svg#icon-send"></use>
-                </svg>
-        </button>
+    </div>
 
     </div>
 
-
-
-    </div>
-    </div>
+    <!-- MODAL WINDOW -->
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
