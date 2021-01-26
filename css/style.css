@@ -49,8 +49,8 @@ li{
   color: var(--main-text-color);
 }
 
- a:hover, address:hover
- li:focus, a:focus, address:focus{
+a:hover, address:hover
+li:focus, a:focus, address:focus{
   transition-property: color;
   transition-duration: var(--animation-duration);
   transition-timing-function: var(--animation-timing-function);
@@ -328,6 +328,7 @@ header> .container{
   outline: transparent;
   cursor: pointer;
   min-width: 200px;
+  min-height: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -385,7 +386,14 @@ header> .container{
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color:#ffffff;
   cursor: pointer;
+}
 
+.modal-button:hover,
+.modal-button:focus{
+  transition-property: fill;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
+  fill: var(--blue-bg-color);
 }
 
 /* Features section */
