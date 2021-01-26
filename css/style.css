@@ -392,8 +392,7 @@ header> .container{
   transition-timing-function: var(--animation-timing-function);
 }
 
-.modal-button:hover,
-.modal-button:focus{
+.modal-button:hover{
   fill: var(--blue-bg-color);
 }
 
